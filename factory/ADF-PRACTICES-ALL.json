@@ -1,0 +1,15 @@
+{
+	"name": "ADF-PRACTICES-ALL",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7df1a8b4-574e-4b4d-b917-63c57ca7e5be",
+		"tenantId": "b8a6bae8-ac1d-4374-9247-2912060cd297"
+	}
+}
