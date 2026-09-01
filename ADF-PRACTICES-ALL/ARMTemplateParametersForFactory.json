@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADF-PRACTICES-ALL"
+		},
+		"SOURCE_LS_accountKey": {
+			"value": ""
+		},
+		"LS_SINK_accountKey": {
+			"value": ""
+		},
+		"LS_KV_SQL_DB_properties_typeProperties_baseUrl": {
+			"value": "https://KV-Demo31aug.vault.azure.net/"
+		},
+		"SOURCE_LS_properties_typeProperties_url": {
+			"value": "https://demostorageaccount3108.dfs.core.windows.net/"
+		},
+		"LS_SINK_properties_typeProperties_url": {
+			"value": "https://demostorageaccount3108.dfs.core.windows.net/"
+		}
+	}
+}
