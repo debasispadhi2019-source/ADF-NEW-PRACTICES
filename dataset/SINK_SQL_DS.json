@@ -1,0 +1,53 @@
+{
+	"name": "SINK_SQL_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SINK_SQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Hospital_Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Location",
+				"type": "varchar"
+			},
+			{
+				"name": "Department",
+				"type": "varchar"
+			},
+			{
+				"name": "Doctors_Count",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Patients_Count",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Admission_Date",
+				"type": "date"
+			},
+			{
+				"name": "Discharge_Date",
+				"type": "date"
+			},
+			{
+				"name": "Medical_Expenses",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Hospital_data"
+		}
+	}
+}

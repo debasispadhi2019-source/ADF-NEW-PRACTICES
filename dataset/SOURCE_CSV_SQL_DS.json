@@ -1,0 +1,56 @@
+{
+	"name": "SOURCE_CSV_SQL_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SOURCE_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "LAB3_SQL/SOURCE",
+				"fileSystem": "prac-1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Hospital_Name",
+				"type": "String"
+			},
+			{
+				"name": "Location",
+				"type": "String"
+			},
+			{
+				"name": "Department",
+				"type": "String"
+			},
+			{
+				"name": "Doctors_Count",
+				"type": "String"
+			},
+			{
+				"name": "Patients_Count",
+				"type": "String"
+			},
+			{
+				"name": "Admission_Date",
+				"type": "String"
+			},
+			{
+				"name": "Discharge_Date",
+				"type": "String"
+			},
+			{
+				"name": "Medical_Expenses",
+				"type": "String"
+			}
+		]
+	}
+}
