@@ -1,0 +1,24 @@
+{
+	"name": "LS_SINK_SQL",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "demo-user.database.windows.net",
+			"database": "lucifer",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "lucifer",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "LS_KV_SQL_DB",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "SqlPassword",
+				"secretVersion": "f2bef17aa2814bd8a746529ace99f566"
+			}
+		}
+	}
+}
