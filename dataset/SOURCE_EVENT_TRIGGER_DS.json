@@ -1,0 +1,58 @@
+{
+	"name": "SOURCE_EVENT_TRIGGER_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SOURCE_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Appointment",
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Trigger/Event Trigger/Source",
+				"fileSystem": "prac-1"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "appoIntment_Id",
+				"type": "String"
+			},
+			{
+				"name": "patient_Id",
+				"type": "String"
+			},
+			{
+				"name": "doct_Id",
+				"type": "String"
+			},
+			{
+				"name": "reason",
+				"type": "String"
+			},
+			{
+				"name": "appointment_Date",
+				"type": "String"
+			},
+			{
+				"name": "payment_amount",
+				"type": "String"
+			},
+			{
+				"name": "mode_of_payment",
+				"type": "String"
+			},
+			{
+				"name": "mode_of_appointment",
+				"type": "String"
+			},
+			{
+				"name": "appointment_status",
+				"type": "String"
+			}
+		]
+	}
+}

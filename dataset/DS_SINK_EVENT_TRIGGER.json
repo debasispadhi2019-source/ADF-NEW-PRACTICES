@@ -1,0 +1,23 @@
+{
+	"name": "DS_SINK_EVENT_TRIGGER",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SINK",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Trigger/Event Trigger/Sink",
+				"fileSystem": "prac-1"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
