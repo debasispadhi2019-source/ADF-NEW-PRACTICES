@@ -60,6 +60,45 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "DELETE",
+				"type": "Delete",
+				"dependsOn": [
+					{
+						"activity": "Copy data1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "SOURCE_DELETE_DS",
+						"type": "DatasetReference"
+					},
+					"logStorageSettings": {
+						"linkedServiceName": {
+							"referenceName": "SOURCE_LS",
+							"type": "LinkedServiceReference"
+						},
+						"path": "prac-1/LAB2_DELETE/Source"
+					},
+					"enableLogging": true,
+					"storeSettings": {
+						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					}
+				}
 			}
 		],
 		"annotations": []
