@@ -17,6 +17,15 @@
 		"LS_SINK_properties_typeProperties_url": {
 			"value": "https://demostorageaccount3108.dfs.core.windows.net/"
 		},
+		"LS_SINK_SQL_properties_typeProperties_server": {
+			"value": "demo-user.database.windows.net"
+		},
+		"LS_SINK_SQL_properties_typeProperties_database": {
+			"value": "lucifer"
+		},
+		"LS_SINK_SQL_properties_typeProperties_userName": {
+			"value": "lucifer"
+		},
 		"SOURCE_LS_properties_typeProperties_url": {
 			"value": "https://demostorageaccount3108.dfs.core.windows.net/"
 		},
