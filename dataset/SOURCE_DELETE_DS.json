@@ -5,6 +5,9 @@
 			"referenceName": "SOURCE_LS",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "DELETE_LAB2"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

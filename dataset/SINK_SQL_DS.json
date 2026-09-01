@@ -5,6 +5,9 @@
 			"referenceName": "LS_SINK_SQL",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "SQL"
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [

@@ -1,0 +1,70 @@
+{
+	"name": "Sch_trigger_Source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SINK",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Trigger/Schedule Trigger/Source",
+				"fileSystem": "prac-1"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "name",
+				"type": "String"
+			},
+			{
+				"name": "object_id",
+				"type": "String"
+			},
+			{
+				"name": "principal_id",
+				"type": "String"
+			},
+			{
+				"name": "schema_id",
+				"type": "String"
+			},
+			{
+				"name": "parent_object_id",
+				"type": "String"
+			},
+			{
+				"name": "type",
+				"type": "String"
+			},
+			{
+				"name": "type_desc",
+				"type": "String"
+			},
+			{
+				"name": "create_date",
+				"type": "String"
+			},
+			{
+				"name": "modify_date",
+				"type": "String"
+			},
+			{
+				"name": "is_ms_shipped",
+				"type": "String"
+			},
+			{
+				"name": "is_published",
+				"type": "String"
+			},
+			{
+				"name": "is_schema_published",
+				"type": "String"
+			}
+		]
+	}
+}

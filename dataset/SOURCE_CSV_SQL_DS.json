@@ -5,6 +5,9 @@
 			"referenceName": "SOURCE_LS",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "SQL"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

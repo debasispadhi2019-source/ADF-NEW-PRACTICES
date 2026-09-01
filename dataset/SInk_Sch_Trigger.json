@@ -1,26 +1,19 @@
 {
-	"name": "DS_SINK",
+	"name": "SInk_Sch_Trigger",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "LS_SINK",
 			"type": "LinkedServiceReference"
 		},
-		"folder": {
-			"name": "COPY_LAB1"
-		},
 		"annotations": [],
-		"type": "DelimitedText",
+		"type": "Json",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "LAB1/Sink",
+				"folderPath": "Trigger/Schedule Trigger/Sink",
 				"fileSystem": "prac-1"
-			},
-			"columnDelimiter": ",",
-			"escapeChar": "\\",
-			"firstRowAsHeader": true,
-			"quoteChar": "\""
+			}
 		},
-		"schema": []
+		"schema": {}
 	}
 }

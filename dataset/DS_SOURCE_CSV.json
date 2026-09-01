@@ -5,6 +5,9 @@
 			"referenceName": "SOURCE_LS",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "COPY_LAB1"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
