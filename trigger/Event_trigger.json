@@ -1,0 +1,24 @@
+{
+	"name": "Event_trigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Event Trigger",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/prac-1/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/402d9d33-2c4c-4f04-bf0e-2b0958421c83/resourceGroups/RG-ADF-PRACTICES/providers/Microsoft.Storage/storageAccounts/demostorageaccount3108",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
